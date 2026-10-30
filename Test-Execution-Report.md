@@ -10,16 +10,27 @@ E-commerce Application – Test Execution Report
 2. Test Execution Summary
 Metric	Count
 Total Test Cases	80
-Executed	1
-Passed	1
+Executed	2
+Passed	2
 Failed	0
 Blocked	0
-Not Executed	79
+Not Executed	78
+
+## 3. Test Execution Details
+
+| Test Case ID | Test Scenario | Actual Result | Status | Defect ID |
+|---|---|---|---|---|
+| TC-LOGIN-001 | Login with valid credentials | Products page appeared successfully | Pass | N/A |
+| TC-LOGIN-002 | Login with incorrect password | Invalid credentials error message displayed | Pass | N/A |
+| TC-REG-001 | Register with valid details | Not Executed | Not Executed | N/A |
+| TC-REG-002 | Register with an existing email | Not Executed | Not Executed | N/A |
+| TC-SEARCH-001 | Search with a valid product name | Not Executed | Not Executed | N/A |
+| TC-SEARCH-003 | Search with an invalid product name | Not Executed | Not Executed | N/A |
 
 3. Test Execution Details
 Test Case ID	       Test Scenario	                                  Actual Result	                          Status	           Defect ID
 TC-LOGIN-001	       Login with valid credentials		                  Products page appeared successfully	    Pass               N/A
-TC-LOGIN-002	       Login with incorrect password	                  
+TC-LOGIN-002	       Login with incorrect password	                  The application rejected the login attempt and displayed the error message: "Username and password do   not match any user in this service."            
 TC-REG-001	         Register with valid details	
 TC-REG-002	         Register with an existing email	
 TC-SEARCH-001	       Search with a valid product name	
