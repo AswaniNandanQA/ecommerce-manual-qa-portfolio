@@ -16,6 +16,11 @@ Failed	0
 Blocked	0
 Not Executed	78
 
+| Name | Place | Thing | Animal |
+| --- | --- | --- | --- |
+| Aswani | Konni | Diamond | Crow |
+
+
 ## 3. Test Execution Details
 
 | Test Case ID | Test Scenario | Actual Result | Status | Defect ID |
