@@ -10,24 +10,24 @@ E-commerce Application – Test Execution Report
 2. Test Execution Summary
 Metric	Count
 Total Test Cases	80
-Executed	0
-Passed	0
+Executed	1
+Passed	1
 Failed	0
 Blocked	0
-Not Executed	80
+Not Executed	79
 
 3. Test Execution Details
-Test Case ID	Test Scenario	Actual Result	Status	Defect ID
-TC-LOGIN-001	Login with valid credentials	Not Executed	Not Executed	N/A
-TC-LOGIN-002	Login with incorrect password	Not Executed	Not Executed	N/A
-TC-REG-001	Register with valid details	Not Executed	Not Executed	N/A
-TC-REG-002	Register with an existing email	Not Executed	Not Executed	N/A
-TC-SEARCH-001	Search with a valid product name	Not Executed	Not Executed	N/A
-TC-SEARCH-003	Search with an invalid product name	Not Executed	Not Executed	N/A
-TC-CART-001	Add a single product to the cart	Not Executed	Not Executed	N/A
-TC-CART-009	Remove a product from the cart	Not Executed	Not Executed	N/A
-TC-CHECKOUT-001	Proceed to checkout with a valid cart	Not Executed	Not Executed	N/A
-TC-CHECKOUT-014	Verify successful order placement	Not Executed	Not Executed	N/A
+Test Case ID	       Test Scenario	                                  Actual Result	                          Status	           Defect ID
+TC-LOGIN-001	       Login with valid credentials		                  Products page appeared successfully	    Pass               N/A
+TC-LOGIN-002	       Login with incorrect password	                  
+TC-REG-001	         Register with valid details	
+TC-REG-002	         Register with an existing email	
+TC-SEARCH-001	       Search with a valid product name	
+TC-SEARCH-003	       Search with an invalid product name	
+TC-CART-001	         Add a single product to the cart	
+TC-CART-009	         Remove a product from the cart	
+TC-CHECKOUT-001	     Proceed to checkout with a valid cart	
+TC-CHECKOUT-014	     Verify successful order placement	
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
 
 4. Defect Summary
