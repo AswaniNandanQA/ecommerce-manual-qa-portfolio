@@ -26,10 +26,10 @@ Not Executed	78
 | TC-REG-002 | Register with an existing email | Not Executed | Not Executed | N/A |
 | TC-SEARCH-001 | Search with a valid product name | Not Executed | Not Executed | N/A |
 | TC-SEARCH-003 | Search with an invalid product name | Not Executed | Not Executed | N/A |
-| TC-REG-001 | Add a single product to the cart	 | Not Executed | Not Executed | N/A |
-| TC-REG-009 | Remove a product from the cart | Not Executed | Not Executed | N/A |
-| TC-SEARCH-001 | Proceed to checkout with a valid cart | Not Executed | Not Executed | N/A |
-| TC-SEARCH-004 | Verify successful order placement | Not Executed | Not Executed | N/A |
+| TC-CART-001 | Add a single product to the cart	 | Not Executed | Not Executed | N/A |
+| TC-CART-009 | Remove a product from the cart | Not Executed | Not Executed | N/A |
+| TC-CHECKOUT-001 | Proceed to checkout with a valid cart | Not Executed | Not Executed | N/A |
+| TC-CHECKOUT-004 | Verify successful order placement | Not Executed | Not Executed | N/A |
 
 
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
