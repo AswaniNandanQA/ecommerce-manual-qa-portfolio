@@ -10,11 +10,11 @@ E-commerce Application – Test Execution Report
 2. Test Execution Summary
 Metric	Count
 Total Test Cases	80
-Executed	3
-Passed	3
+Executed	4
+Passed	4
 Failed	0
 Blocked	0
-Not Executed	77
+Not Executed	76
 
 ## 3. Test Execution Details
 
@@ -23,6 +23,8 @@ Not Executed	77
 | TC-LOGIN-001 | Login with valid credentials | Products page appeared successfully | Pass | N/A |
 | TC-LOGIN-002 | Login with incorrect password | Invalid credentials error message displayed | Pass | N/A |
 | TC-LOGIN-003 | Login with unregistered username | Invalid credentials error message displayed | Pass | N/A |
+| TC-LOGIN-004 | Login with both incorrect username and incorrect password | Invalid credentials error message displayed | Pass | N/A |
+| TC-LOGIN-005 | Login with both fields empty | Username required error message displayed | Pass | N/A |
 | TC-REG-001 | Register with valid details | Not Executed | Not Executed | N/A |
 | TC-REG-002 | Register with an existing email | Not Executed | Not Executed | N/A |
 | TC-SEARCH-001 | Search with a valid product name | Not Executed | Not Executed | N/A |
