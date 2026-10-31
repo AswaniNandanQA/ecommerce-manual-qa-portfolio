@@ -26,6 +26,11 @@ Not Executed	74
 | TC-LOGIN-004 | Login with both incorrect username and incorrect password | Invalid credentials error message displayed | Pass | N/A |
 | TC-LOGIN-005 | Login with both fields empty | Username required error message displayed | Pass | N/A |
 | TC-LOGIN-006 | Login with empty username and valid password | Username required error message displayed | Pass | N/A |
+| TC-LOGIN-007 | Login with valid username and empty password | Password required error message displayed | Pass | N/A |
+| TC-LOGIN-008 | Login with invalid username and empty password | Password required error message displayed | Pass | N/A |
+| TC-LOGIN-009 | Login with locked-out user credentials | Locked-out user error message displayed | Pass | N/A |
+| TC-LOGIN-010 | Login with problem user credentials | Products page displayed successfully; incorrect product images observed | Pass | BUG-004 |
+
 | TC-REG-001 | Register with valid details | Not Executed | Not Executed | N/A |
 | TC-REG-002 | Register with an existing email | Not Executed | Not Executed | N/A |
 | TC-SEARCH-001 | Search with a valid product name | Not Executed | Not Executed | N/A |
