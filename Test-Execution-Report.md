@@ -10,8 +10,8 @@ E-commerce Application – Test Execution Report
 2. Test Execution Summary
 Metric	Count
 Total Test Cases	80
-Executed	6
-Passed	6
+Executed	10
+Passed	10
 Failed	0
 Blocked	0
 Not Executed	74
@@ -30,6 +30,16 @@ Not Executed	74
 | TC-LOGIN-008 | Login with invalid username and empty password | Password required error message displayed | Pass | N/A |
 | TC-LOGIN-009 | Login with locked-out user credentials | Locked-out user error message displayed | Pass | N/A |
 | TC-LOGIN-010 | Login with problem user credentials | Products page displayed successfully; incorrect product images observed | Pass | BUG-004 |
+| TC-LOGIN-011 | Login with performance glitch user | Products page displayed successfully after a noticeable delay | Pass | N/A |
+| TC-LOGIN-012 | Login with visual user credentials | Products page displayed successfully; no unusual behaviour observed | Pass | N/A |
+| TC-LOGIN-013 | Login with leading and trailing spaces in username | Invalid credentials error message displayed | Pass | N/A |
+| TC-LOGIN-014 | Login with uppercase username | Invalid credentials error message displayed | Pass | N/A |
+| TC-LOGIN-015 | Login with uppercase password | Invalid credentials error message displayed | Pass | N/A |
+| TC-LOGIN-016 | Login with very long username | Invalid credentials error message displayed | Pass | N/A |
+| TC-LOGIN-017 | Login with special characters in username | Invalid credentials error message displayed | Pass | N/A |
+| TC-LOGIN-018 | Login with username containing only spaces | Invalid credentials error message displayed | Pass | N/A |
+| TC-LOGIN-019 | Login with numeric-only username | Invalid credentials error message displayed | Pass | N/A |
+| TC-LOGIN-020 | Login with special characters in password | Invalid credentials error message displayed | Pass | N/A |
 
 | TC-REG-001 | Register with valid details | Not Executed | Not Executed | N/A |
 | TC-REG-002 | Register with an existing email | Not Executed | Not Executed | N/A |
