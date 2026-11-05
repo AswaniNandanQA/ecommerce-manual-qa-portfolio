@@ -7,9 +7,10 @@ SauceDemo – Login Module Test Cases
 •	Prepared By: Aswani Nandan
 •	Test Environment: SauceDemo practice application
 
-3. Test Data
-| Test Data ID | Username |	Password | Purpose |
-TD-001	standard_user	secret_sauce	Valid login
+**3. Test Data**
+| Test Case ID | Username | Password | Purpose | 
+|---|---|---|---|---|
+| TD-001 | standard_user	secret_sauce | Valid login |
 TD-002	wrong_user	wrong_password123	Invalid credentials
 TD-003	locked_out_user	secret_sauce	Locked-out account
 TD-004	problem_user	secret_sauce	Check login and product page
@@ -21,7 +22,7 @@ TD-009	STANDARD_USER	secret_sauce	Uppercase username
 TD-010	standard_user	SECRET_SAUCE	Uppercase password
 TD-011	standard_user	secret@#$123	Special-character password
 Note: The invalid usernames and passwords above are test inputs, not valid SauceDemo accounts. SauceDemo's publicly provided demo credentials are used for the valid and special-account scenarios.
-4. Login Test Cases
+5. Login Test Cases
 TC-LOGIN-001: Login with valid credentials
 •	Test Data: TD-001
 •	Steps:
