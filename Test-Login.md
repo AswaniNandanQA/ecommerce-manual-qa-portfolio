@@ -1,304 +1,221 @@
-SauceDemo — Manual Testing Test Cases
-Project Overview
-Project: SauceDemo
-Testing Type: Manual Testing
-Module: Login
-Prepared by: Aswani Nandan
+SauceDemo – Login Module Test Cases
+1. Project Overview
+•	Project: SauceDemo
+•	Application URL: https://www.saucedemo.com/
+•	Testing Type: Manual Testing
+•	Module: Login
+•	Prepared By: Aswani Nandan
+•	Test Environment: SauceDemo practice application
 
-Test Environment: SauceDemo practice application
-Test Account: Standard test accounts provided by SauceDemo
-
-
-TC-LOGIN-001: Login with Valid Credentials
-•	Objective: Verify that a registered user can log in successfully.
-•	Precondition: The user has an active account.
-•	Test Data: Valid registered username and password.
-  Username: standard_user
-  Password: secret_sauce
+3. Test Data
+| Test Data ID | Username |	Password | Purpose |
+TD-001	standard_user	secret_sauce	Valid login
+TD-002	wrong_user	wrong_password123	Invalid credentials
+TD-003	locked_out_user	secret_sauce	Locked-out account
+TD-004	problem_user	secret_sauce	Check login and product page
+TD-005	performance_glitch_user	secret_sauce	Check login with performance delay
+TD-006	visual_user	secret_sauce	Check visual behaviour
+TD-007	standard_user	wrong_password123	Valid username, invalid password
+TD-008	wrong_user	secret_sauce	Invalid username, valid password
+TD-009	STANDARD_USER	secret_sauce	Uppercase username
+TD-010	standard_user	SECRET_SAUCE	Uppercase password
+TD-011	standard_user	secret@#$123	Special-character password
+Note: The invalid usernames and passwords above are test inputs, not valid SauceDemo accounts. SauceDemo's publicly provided demo credentials are used for the valid and special-account scenarios.
+4. Login Test Cases
+TC-LOGIN-001: Login with valid credentials
+•	Test Data: TD-001
 •	Steps:
-1.	Open the application login page.
-2.	Enter a valid registered username.
-3.	Enter the correct password.
+1.	Open the SauceDemo application.
+2.	Enter standard_user in the username field.
+3.	Enter secret_sauce in the password field.
 4.	Click the Login button.
-•	Expected Result: The user should log in successfully and see the home page or dashboard.
-•	Actual Result: To be recorded during test execution.
-•	Status: Not Executed
-
-
-TC-LOGIN-002: Login with an Incorrect Password
-•	Objective: Verify that login is rejected when the password is incorrect.
-•	Precondition: The user has an active account.
-•	Test Data: Valid username and incorrect password.
-  Username: standard_user
-  Password: wrong_password123
+•	Expected Result: User should successfully log in and navigate to the Products page.
+•	Actual Result: Products page displayed successfully.
+•	Status: Pass
+TC-LOGIN-002: Login with valid username and invalid password
+•	Test Data: TD-007
 •	Steps:
-1.	Open the login page.
-2.	Enter a valid registered username.
-3.	Enter an incorrect password.
-4.	Click the Login button.
-•	Expected Result: Login should be rejected and an appropriate error message should appear.
-•	Actual Result: To be recorded during test execution.
-•	Status: Not Executed
-
-
-TC-LOGIN-003: Login with Empty Fields
-•	Objective: Verify validation when the username and password are empty.
-•	Precondition: The login page is open.
+1.	Enter standard_user.
+2.	Enter wrong_password123.
+3.	Click Login.
+•	Expected Result: Login should be rejected with an appropriate error message.
+•	Actual Result: Error displayed: Epic sadface: Username and password do not match any user in this service
+•	Status: Pass
+TC-LOGIN-003: Login with invalid username and valid password
+•	Test Data: TD-008
+•	Steps:
+1.	Enter wrong_user.
+2.	Enter secret_sauce.
+3.	Click Login.
+•	Expected Result: Login should be rejected with an appropriate error message.
+•	Actual Result: Invalid credentials error displayed.
+•	Status: Pass
+TC-LOGIN-004: Login with invalid username and invalid password
+•	Test Data: Invalid username and password.
+•	Steps:
+1.	Enter wrong_user.
+2.	Enter wrong_password123.
+3.	Click Login.
+•	Expected Result: Login should be rejected.
+•	Actual Result: Invalid credentials error displayed.
+•	Status: Pass
+TC-LOGIN-005: Login with both fields empty
 •	Test Data: Empty username and password.
-  Username: 
-  Password: 
 •	Steps:
 1.	Leave the username field empty.
 2.	Leave the password field empty.
-3.	Click the Login button.
-•	Expected Result: Login should not proceed; required-field validation should be displayed.
-•	Actual Result: To be recorded during test execution.
-•	Status: Not Executed
-•	Status: Not Executed.
-
-
-TC-LOGIN-004: Login with Both Username and Password Incorrect
-•	Objective: Verify that a user cannot log in using an unregistered username and an incorrect password.
-•	Precondition: The login page is open.
-•	Test Data: Unregistered username and incorrect password.
+3.	Click Login.
+•	Expected Result: Application should display a required-field validation message.
+•	Actual Result: Epic sadface: Username is required
+•	Status: Pass
+TC-LOGIN-006: Login with empty username and valid password
+•	Test Data: Empty username, secret_sauce.
 •	Steps:
-1.	Open the login page.
-2.	Enter an unregistered username.
-3.	Enter an incorrect password.
-4.	Click the Login button.
-•	Expected Result: Login should be rejected, and an appropriate error message should be displayed.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-005: Submit Login Form with Both Fields Empty
-•	Objective: Verify that the application validates empty username and password fields.
-•	Precondition: The login page is open.
-•	Test Data: Username: Empty; Password: Empty.
+1.	Leave the username field empty.
+2.	Enter secret_sauce in the password field.
+3.	Click Login.
+•	Expected Result: Application should display a username-required message.
+•	Actual Result: Epic sadface: Username is required
+•	Status: Pass
+TC-LOGIN-007: Login with valid username and empty password
+•	Test Data: standard_user, empty password.
 •	Steps:
-1.	Open the login page.
-2.	Leave the username field empty.
-3.	Leave the password field empty.
-4.	Click the Login button.
-•	Expected Result: Login should not proceed. Appropriate required-field validation messages should be displayed.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-006: Submit Login Form with Username Empty
-•	Objective: Verify that the application validates an empty username.
-•	Precondition: The login page is open.
-•	Test Data: Username: Empty; Password: Valid password.
+1.	Enter standard_user.
+2.	Leave the password field empty.
+3.	Click Login.
+•	Expected Result: Application should display a password-required message.
+•	Actual Result: Epic sadface: Password is required
+•	Status: Pass
+TC-LOGIN-008: Login with invalid username and empty password
+•	Test Data: wrong_user, empty password.
 •	Steps:
-1.	Open the login page.
-2.	Leave the username field empty.
-3.	Enter a valid password for a registered account.
-4.	Click the Login button.
-•	Expected Result: Login should not proceed, and the username-required validation message should be displayed.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-007: Submit Login Form with Password Empty
-•	Objective: Verify that the application validates an empty password.
-•	Precondition: The login page is open.
-•	Test Data: Username: Valid registered username; Password: Empty.
+1.	Enter wrong_user.
+2.	Leave the password field empty.
+3.	Click Login.
+•	Expected Result: Application should display a password-required message.
+•	Actual Result: Epic sadface: Password is required
+•	Status: Pass
+TC-LOGIN-009: Login using a locked-out account
+•	Test Data: TD-003
 •	Steps:
-1.	Open the login page.
-2.	Enter a valid registered username.
-3.	Leave the password field empty.
-4.	Click the Login button.
-•	Expected Result: Login should not proceed, and the password-required validation message should be displayed.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-008: Verify Password Case Sensitivity
-•	Objective: Verify that the password is case-sensitive when the account uses a case-sensitive password.
-•	Precondition: A registered account exists with a known password containing letters.
-•	Test Data: Valid username and password entered with at least one letter's case changed.
+1.	Enter locked_out_user.
+2.	Enter secret_sauce.
+3.	Click Login.
+•	Expected Result: Application should prevent login and display an appropriate locked-out message.
+•	Actual Result: Epic sadface: Sorry, this user has been locked out.
+•	Status: Pass
+TC-LOGIN-010: Login using problem_user
+•	Test Data: TD-004
 •	Steps:
-1.	Open the login page.
-2.	Enter a valid registered username.
-3.	Enter the correct password but change the case of at least one letter.
-4.	Click the Login button.
-•	Expected Result: Login should be rejected if the entered password differs from the registered password.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-009: Verify Leading and Trailing Spaces in Username
-•	Objective: Verify how the application handles spaces before or after a username.
-•	Precondition: A registered account exists.
-•	Test Data: Valid username with leading and/or trailing spaces.
+1.	Enter problem_user.
+2.	Enter secret_sauce.
+3.	Click Login.
+4.	Observe the Products page.
+•	Expected Result: User should successfully log in and access the Products page.
+•	Actual Result: Login successful. Incorrect/repeated product images were observed on the Products page.
+•	Status: Pass
+•	Related Bug: BUG-004 – Incorrect Product Images
+TC-LOGIN-011: Login using performance_glitch_user
+•	Test Data: TD-005
 •	Steps:
-1.	Open the login page.
-2.	Enter the registered username with a leading space.
-3.	Enter the correct password.
-4.	Click the Login button and record the result.
-5.	Repeat with a trailing space in the username.
-•	Expected Result: The application should handle spaces according to its documented requirements. Record whether it trims spaces or rejects the input.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-010: Verify Leading and Trailing Spaces in Password
-•	Objective: Verify that spaces in the password are handled according to the application's password rules.
-•	Precondition: A registered account exists with a known password.
-•	Test Data: Correct password with an additional leading or trailing space.
+1.	Enter performance_glitch_user.
+2.	Enter secret_sauce.
+3.	Click Login.
+4.	Observe the page loading behaviour.
+•	Expected Result: User should successfully log in and access the Products page.
+•	Actual Result: Products page opened with a noticeable delay.
+•	Status: Pass
+•	Observation: Performance delay noticed; no performance failure was confirmed.
+TC-LOGIN-012: Login using visual_user
+•	Test Data: TD-006
 •	Steps:
-1.	Open the login page.
-2.	Enter the registered username.
-3.	Enter the correct password with an additional leading space.
-4.	Click the Login button and record the result.
-5.	Repeat with an additional trailing space.
-•	Expected Result: The application should follow its defined password-handling rules. Password spaces should not be silently removed unless that behaviour is explicitly specified.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-011: Verify Password Masking
-•	Objective: Verify that the password is hidden when entered into the password field.
-•	Precondition: The login page is open.
-•	Test Data: Any sample password.
+1.	Enter visual_user.
+2.	Enter secret_sauce.
+3.	Click Login.
+4.	Observe the Products page.
+•	Expected Result: User should successfully log in and access the Products page.
+•	Actual Result: Products page opened successfully. No unusual behaviour was observed during this test.
+•	Status: Pass
+TC-LOGIN-013: Login with leading and trailing spaces in username
+•	Test Data: Username: standard_user; Password: secret_sauce.
 •	Steps:
-1.	Open the login page.
-2.	Click the password field.
-3.	Enter a sample password.
-4.	Observe how the password is displayed.
-•	Expected Result: The password should be displayed as masked characters, such as dots or asterisks.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-012: Verify Show/Hide Password Functionality
-•	Objective: Verify that the user can show and hide the entered password using the visibility icon.
-•	Precondition: The login page provides a show/hide password option.
-•	Test Data: Sample password: Test@1234
+1.	Enter standard_user including spaces.
+2.	Enter secret_sauce.
+3.	Click Login.
+•	Expected Result: Application should handle the input according to its username validation rules and reject invalid credentials if spaces are not accepted.
+•	Actual Result: Invalid credentials error displayed.
+•	Status: Pass
+TC-LOGIN-014: Login with uppercase username
+•	Test Data: TD-009
 •	Steps:
-1.	Open the login page.
-2.	Enter a password in the password field.
-3.	Click the eye icon.
-4.	Observe whether the password becomes visible.
-5.	Click the eye icon again.
-•	Expected Result: The password should become visible when show is selected and masked again when hide is selected.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-013: Verify Login Using the Enter Key
-•	Objective: Verify that the user can submit the login form using the Enter key.
-•	Precondition: A registered user account exists.
-•	Test Data: Valid username and password.
+1.	Enter STANDARD_USER.
+2.	Enter secret_sauce.
+3.	Click Login.
+•	Expected Result: Application should reject the credentials if usernames are case-sensitive.
+•	Actual Result: Invalid credentials error displayed.
+•	Status: Pass
+TC-LOGIN-015: Login with uppercase password
+•	Test Data: TD-010
 •	Steps:
-1.	Open the login page.
-2.	Enter a valid username.
-3.	Enter the correct password.
-4.	Press the Enter key.
-•	Expected Result: The login form should be submitted, and the user should be logged in successfully.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-014: Verify Login Button Behaviour
-•	Objective: Verify that the Login button responds correctly when clicked.
-•	Precondition: The login page is open.
-•	Test Data: Valid username and password.
+1.	Enter standard_user.
+2.	Enter SECRET_SAUCE.
+3.	Click Login.
+•	Expected Result: Application should reject the credentials because the password does not match the correct case.
+•	Actual Result: Invalid credentials error displayed.
+•	Status: Pass
+TC-LOGIN-016: Login with a very long username
+•	Test Data: Very long username; password: secret_sauce.
 •	Steps:
-1.	Open the login page.
-2.	Enter valid login credentials.
-3.	Click the Login button once.
-4.	Observe the button and application response.
-•	Expected Result: The form should be submitted once, and the application should provide appropriate feedback without unintended duplicate submissions.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-015: Verify Error Message for Invalid Credentials
-•	Objective: Verify that an appropriate error message is displayed when invalid login credentials are entered.
-•	Precondition: The login page is open.
-•	Test Data: Invalid username and password.
+1.	Enter a very long username.
+2.	Enter secret_sauce.
+3.	Click Login.
+•	Expected Result: Application should handle the input without crashing and reject invalid credentials.
+•	Actual Result: Invalid credentials error displayed.
+•	Status: Pass
+TC-LOGIN-017: Login with special characters in username
+•	Test Data: Username: standard_user@#$%; password: secret_sauce.
 •	Steps:
-1.	Open the login page.
-2.	Enter invalid login credentials.
-3.	Click the Login button.
-4.	Observe the error message.
-•	Expected Result: Login should be rejected, and a clear, appropriate error message should be displayed.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-016: Verify Error Message After Correcting Invalid Credentials
-•	Objective: Verify that the login error message is handled correctly after the user corrects invalid credentials.
-•	Precondition: The login page displays an error after a failed login attempt.
-•	Test Data: First attempt: Invalid credentials. Second attempt: Valid credentials.
+1.	Enter standard_user@#$%.
+2.	Enter secret_sauce.
+3.	Click Login.
+•	Expected Result: Application should reject invalid credentials.
+•	Actual Result: Invalid credentials error displayed.
+•	Status: Pass
+TC-LOGIN-018: Login with username containing only spaces
+•	Test Data: Username containing spaces only; password: secret_sauce.
 •	Steps:
-1.	Open the login page.
-2.	Enter invalid credentials and click Login.
-3.	Observe the error message.
-4.	Replace the incorrect credentials with valid credentials.
-5.	Click Login again.
-•	Expected Result: The user should log in successfully, and the previous error message should no longer be displayed as an active error.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-017: Verify Forgot Password Navigation
-•	Objective: Verify that the Forgot Password link navigates the user to the password recovery page.
-•	Precondition: The login page provides a Forgot Password link.
-•	Test Data: Registered email address.
+1.	Enter only spaces in the username field.
+2.	Enter secret_sauce.
+3.	Click Login.
+•	Expected Result: Application should reject the input and prevent login.
+•	Actual Result: Invalid credentials error displayed.
+•	Status: Pass
+TC-LOGIN-019: Login with numeric-only username
+•	Test Data: Username: 1234567890; password: secret_sauce.
 •	Steps:
-1.	Open the login page.
-2.	Click the Forgot Password link.
-3.	Observe the navigation.
-4.	Enter the registered email address if requested.
-5.	Submit the recovery request.
-•	Expected Result: The user should be directed to the password recovery flow and receive appropriate confirmation.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-018: Verify Account Lockout After Repeated Failed Login Attempts
-•	Objective: Verify that the application applies the specified account protection after repeated unsuccessful login attempts.
-•	Precondition: The application has a documented failed-login limit and account protection policy.
-•	Test Data: Registered username and incorrect password.
+1.	Enter 1234567890.
+2.	Enter secret_sauce.
+3.	Click Login.
+•	Expected Result: Application should reject invalid credentials.
+•	Actual Result: Invalid credentials error displayed.
+•	Status: Pass
+TC-LOGIN-020: Login with valid username and different special-character password
+•	Test Data: TD-011
 •	Steps:
-1.	Open the login page.
-2.	Enter a registered username and incorrect password.
-3.	Repeat the failed login attempt until the configured limit is reached.
-4.	Observe the application's response.
-•	Expected Result: The application should apply the configured account protection policy and display an appropriate message.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-019: Verify Logout and Access to Protected Pages
-•	Objective: Verify that a logged-out user cannot access protected pages using the previous authenticated session.
-•	Precondition: The user is successfully logged in.
-•	Test Data: Valid user account.
-•	Steps:
-1.	Log in successfully.
-2.	Navigate to a protected page, such as the account dashboard.
-3.	Click Logout.
-4.	Attempt to access the previous protected page using the browser's Back button.
-5.	Observe the application response.
-•	Expected Result: The user should be logged out. Protected content should not remain accessible through the previous authenticated session.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
-TC-LOGIN-020: Verify Session Timeout After Inactivity
-•	Objective: Verify that the application handles an inactive user session according to its session timeout policy.
-•	Precondition: The user is logged in, and the application has a defined session timeout period.
-•	Test Data: Valid user account.
-•	Steps:
-1.	Log in successfully.
-2.	Leave the application inactive for the configured timeout period.
-3.	Attempt to access a protected page or perform an authenticated action.
-4.	Observe the application's response.
-•	Expected Result: The session should expire according to the configured policy, and the user should be asked to log in again.
-•	Actual Result: Not Executed.
-•	Status: Not Executed.
-
-
+1.	Enter standard_user.
+2.	Enter secret@#$123.
+3.	Click Login.
+•	Expected Result: Application should reject invalid credentials.
+•	Actual Result: Invalid credentials error displayed.
+•	Status: Pass
+4. Test Execution Summary
+Metric	Result
+Total Test Cases	20
+Executed	20
+Passed	20
+Failed	0
+Blocked	0
+Not Executed	0
+Overall Result: All 20 executed login test scenarios passed their expected outcomes.
+Note: BUG-004 was observed during TC-LOGIN-010 on the Products page. The login itself passed; the product-image issue was documented separately.
 
