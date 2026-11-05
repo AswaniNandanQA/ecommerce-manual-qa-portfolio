@@ -1,15 +1,20 @@
-E-commerce Application — Test Cases
+SauceDemo — Manual Testing Test Cases
 Project Overview
-Project: E-commerce Application
+Project: SauceDemo
 Testing Type: Manual Testing
 Module: Login
 Prepared by: Aswani Nandan
+
+Test Environment: SauceDemo practice application
+Test Account: Standard test accounts provided by SauceDemo
 
 
 TC-LOGIN-001: Login with Valid Credentials
 •	Objective: Verify that a registered user can log in successfully.
 •	Precondition: The user has an active account.
 •	Test Data: Valid registered username and password.
+  Username: standard_user
+  Password: secret_sauce
 •	Steps:
 1.	Open the application login page.
 2.	Enter a valid registered username.
@@ -24,6 +29,8 @@ TC-LOGIN-002: Login with an Incorrect Password
 •	Objective: Verify that login is rejected when the password is incorrect.
 •	Precondition: The user has an active account.
 •	Test Data: Valid username and incorrect password.
+  Username: standard_user
+  Password: wrong_password123
 •	Steps:
 1.	Open the login page.
 2.	Enter a valid registered username.
@@ -38,6 +45,8 @@ TC-LOGIN-003: Login with Empty Fields
 •	Objective: Verify validation when the username and password are empty.
 •	Precondition: The login page is open.
 •	Test Data: Empty username and password.
+  Username: 
+  Password: 
 •	Steps:
 1.	Leave the username field empty.
 2.	Leave the password field empty.
