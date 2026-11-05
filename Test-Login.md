@@ -22,7 +22,7 @@ SauceDemo – Login Module Test Cases
 | TC-LOGIN-010 | problem_user | secret_sauce | Products page displayed successfully; incorrect product images observed |
 | TC-LOGIN-011 | performance_glitch_user | secret_sauce | Products page displayed successfully after a noticeable delay |
 | TC-LOGIN-012 | visual_user | secret_sauce | Products page displayed successfully; no unusual behaviour observed |
-| TC-LOGIN-013 |    standard_user   | secret_sauce | Invalid credentials error message displayed |
+| TC-LOGIN-013 |    standard_user   | secret_sauce | Invalid credentials error message displayed | 
 | TC-LOGIN-014 | STANDARD_USER | secret_sauce | Invalid credentials error message displayed |
 | TC-LOGIN-015 | standard_user | SECRET_SAUCE | Invalid credentials error message displayed |
 | TC-LOGIN-016 | abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890 | secret_sauce | Invalid credentials error message displayed |
