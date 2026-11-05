@@ -8,42 +8,29 @@ SauceDemo – Login Module Test Cases
 •	Test Environment: SauceDemo practice application
 
 **3. Test Data**
-| Test Case ID | Test Scenario | Actual Result | Status | Defect ID |
+| Test Case ID | Username | Password | Purpose |
 |---|---|---|---|---|
-| TC-LOGIN-001 | Login with valid credentials | Products page appeared successfully | Pass | N/A |
-| TC-LOGIN-002 | Login with incorrect password | Invalid credentials error message displayed | Pass | N/A |
-| TC-LOGIN-003 | Login with unregistered username | Invalid credentials error message displayed | Pass | N/A |
-| TC-LOGIN-004 | Login with both incorrect username and incorrect password | Invalid credentials error message displayed | Pass | N/A |
-| TC-LOGIN-005 | Login with both fields empty | Username required error message displayed | Pass | N/A |
-| TC-LOGIN-006 | Login with empty username and valid password | Username required error message displayed | Pass | N/A |
-| TC-LOGIN-007 | Login with valid username and empty password | Password required error message displayed | Pass | N/A |
-| TC-LOGIN-008 | Login with invalid username and empty password | Password required error message displayed | Pass | N/A |
-| TC-LOGIN-009 | Login with locked-out user credentials | Locked-out user error message displayed | Pass | N/A |
-| TC-LOGIN-010 | Login with problem user credentials | Products page displayed successfully; incorrect product images observed | Pass | BUG-004 |
-| TC-LOGIN-011 | Login with performance glitch user | Products page displayed successfully after a noticeable delay | Pass | N/A |
-| TC-LOGIN-012 | Login with visual user credentials | Products page displayed successfully; no unusual behaviour observed | Pass | N/A |
-| TC-LOGIN-013 | Login with leading and trailing spaces in username | Invalid credentials error message displayed | Pass | N/A |
-| TC-LOGIN-014 | Login with uppercase username | Invalid credentials error message displayed | Pass | N/A |
-| TC-LOGIN-015 | Login with uppercase password | Invalid credentials error message displayed | Pass | N/A |
-| TC-LOGIN-016 | Login with very long username | Invalid credentials error message displayed | Pass | N/A |
-| TC-LOGIN-017 | Login with special characters in username | Invalid credentials error message displayed | Pass | N/A |
-| TC-LOGIN-018 | Login with username containing only spaces | Invalid credentials error message displayed | Pass | N/A |
-| TC-LOGIN-019 | Login with numeric-only username | Invalid credentials error message displayed | Pass | N/A |
-| TC-LOGIN-020 | Login with special characters in password | Invalid credentials error message displayed | Pass | N/A |
+| TC-LOGIN-001 | standard_user | secret_sauce | Valid login |
+| TC-LOGIN-002 | standard_user | wrong_password123 | Invalid Login |
+| TC-LOGIN-003 | standard_user2 | secret_sauce2 | Invalid credentials error message displayed |
+| TC-LOGIN-004 | wrong_user | wrong_password123 | Invalid credentials error message displayed |
+| TC-LOGIN-005 | empty username | empty password | Username required error message displayed |
+| TC-LOGIN-006 | empty username | secret_sauce | Username required error message displayed |
+| TC-LOGIN-007 | standard_user | empty password | Password required error message displayed |
+| TC-LOGIN-008 | wrong_user | empty password | Password required error message displayed |
+| TC-LOGIN-009 | locked_out_user | secret_sauce | Locked-out user error message displayed |
+| TC-LOGIN-010 | problem_user | secret_sauce | Products page displayed successfully; incorrect product images observed |
+| TC-LOGIN-011 | performance_glitch_user | secret_sauce | Products page displayed successfully after a noticeable delay |
+| TC-LOGIN-012 | visual_user | secret_sauce | Products page displayed successfully; no unusual behaviour observed |
+| TC-LOGIN-013 |    standard_user   | secret_sauce | Invalid credentials error message displayed |
+| TC-LOGIN-014 | STANDARD_USER | secret_sauce | Invalid credentials error message displayed |
+| TC-LOGIN-015 | standard_user | SECRET_SAUCE | Invalid credentials error message displayed |
+| TC-LOGIN-016 | abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890 | secret_sauce | Invalid credentials error message displayed |
+| TC-LOGIN-017 | standard_user@#$% | secret_sauce | Invalid credentials error message displayed |
+| TC-LOGIN-018 | Login with username containing only spaces | Invalid credentials error message displayed |
+| TC-LOGIN-019 | Login with numeric-only username | Invalid credentials error message displayed |
+| TC-LOGIN-020 | Login with special characters in password | Invalid credentials error message displayed |
 
-| Test Case ID | Username | Password | Purpose | 
-|---|---|---|---|---|
-| TD-001 | standard_user	secret_sauce | Valid login |
-TD-002	wrong_user	wrong_password123	Invalid credentials
-TD-003	locked_out_user	secret_sauce	Locked-out account
-TD-004	problem_user	secret_sauce	Check login and product page
-TD-005	performance_glitch_user	secret_sauce	Check login with performance delay
-TD-006	visual_user	secret_sauce	Check visual behaviour
-TD-007	standard_user	wrong_password123	Valid username, invalid password
-TD-008	wrong_user	secret_sauce	Invalid username, valid password
-TD-009	STANDARD_USER	secret_sauce	Uppercase username
-TD-010	standard_user	SECRET_SAUCE	Uppercase password
-TD-011	standard_user	secret@#$123	Special-character password
 Note: The invalid usernames and passwords above are test inputs, not valid SauceDemo accounts. SauceDemo's publicly provided demo credentials are used for the valid and special-account scenarios.
 5. Login Test Cases
 TC-LOGIN-001: Login with valid credentials
