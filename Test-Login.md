@@ -7,8 +7,8 @@ SauceDemo – Login Module Test Cases
 •	Prepared By: Aswani Nandan
 •	Test Environment: SauceDemo practice application
 
-| Test Case ID | Test Scenario | Actual Result | Status | Defect ID |
-|---|---|---|---|---|
+| Test Case ID | Test Scenario | Actual Result |
+|---|---|---|
 | TC-LOGIN-001 | Login with valid credentials | Products page appeared successfully |
 | TC-LOGIN-002 | Login with incorrect password | Invalid credentials error message displayed |
 | TC-LOGIN-003 | Login with unregistered username | Invalid credentials error message displayed |
@@ -30,9 +30,9 @@ SauceDemo – Login Module Test Cases
 | TC-LOGIN-019 | Login with numeric-only username | Invalid credentials error message displayed |
 | TC-LOGIN-020 | Login with special characters in password | Invalid credentials error message displayed |
 
-**3. Test Data**
+
 | Test Case ID | Username | Password | Purpose |
-|---|---|---|---|---|
+|---|---|---|---|
 | TC-LOGIN-001 | standard_user | secret_sauce | Valid login |
 | TC-LOGIN-002 | standard_user | wrong_password123 | Invalid Login |
 | TC-LOGIN-003 | standard_user2 | secret_sauce2 | Invalid credentials error message displayed |
