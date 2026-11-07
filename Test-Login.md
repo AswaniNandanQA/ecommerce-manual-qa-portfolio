@@ -2,10 +2,15 @@ SauceDemo – Login Module Test Cases
 1. Project Overview
    
 •	Project: SauceDemo
+
 •	Application URL: https://www.saucedemo.com/
+
 •	Testing Type: Manual Testing
+
 •	Module: Login
+
 •	Prepared By: Aswani Nandan
+
 •	Test Environment: SauceDemo practice application
 
 **3.  Login Test Cases**
@@ -63,8 +68,11 @@ Note: The invalid usernames and passwords above are test inputs, not valid Sauce
 5. Login Test Cases
 
 TC-LOGIN-001: Login with valid credentials
+
 •	Test Data: TD-001
+
 •	Steps:
+
 1.	Open the SauceDemo application.
 2.	Enter standard_user in the username field.
 3.	Enter secret_sauce in the password field.
@@ -74,8 +82,11 @@ TC-LOGIN-001: Login with valid credentials
 •	Status: Pass
 
 TC-LOGIN-002: Login with valid username and invalid password
+
 •	Test Data: TD-007
+
 •	Steps:
+
 1.	Enter standard_user.
 2.	Enter wrong_password123.
 3.	Click Login.
@@ -84,6 +95,7 @@ TC-LOGIN-002: Login with valid username and invalid password
 •	Status: Pass
 
 TC-LOGIN-003: Login with invalid username and valid password
+
 •	Test Data: TD-008
 •	Steps:
 1.	Enter wrong_user.
