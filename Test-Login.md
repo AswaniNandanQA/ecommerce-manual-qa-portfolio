@@ -27,9 +27,9 @@ SauceDemo – Login Module Test Cases
 | TC-LOGIN-015 | standard_user | SECRET_SAUCE | Invalid credentials error message displayed |
 | TC-LOGIN-016 | abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890 | secret_sauce | Invalid credentials error message displayed |
 | TC-LOGIN-017 | standard_user@#$% | secret_sauce | Invalid credentials error message displayed |
-| TC-LOGIN-018 | Login with username containing only spaces | Invalid credentials error message displayed |
-| TC-LOGIN-019 | Login with numeric-only username | Invalid credentials error message displayed |
-| TC-LOGIN-020 | Login with special characters in password | Invalid credentials error message displayed |
+| TC-LOGIN-018 | STANDARD _ USER | secret_sauce | Invalid credentials error message displayed |
+| TC-LOGIN-019 | 1234567890 | secret_sauce | Invalid credentials error message displayed |
+| TC-LOGIN-020 | standard_user | secret@#$123 | Invalid credentials error message displayed |
 
 Note: The invalid usernames and passwords above are test inputs, not valid SauceDemo accounts. SauceDemo's publicly provided demo credentials are used for the valid and special-account scenarios.
 5. Login Test Cases
