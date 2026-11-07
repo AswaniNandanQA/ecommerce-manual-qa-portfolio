@@ -7,6 +7,29 @@ SauceDemo – Login Module Test Cases
 •	Prepared By: Aswani Nandan
 •	Test Environment: SauceDemo practice application
 
+| Test Case ID | Test Scenario | Actual Result | Status | Defect ID |
+|---|---|---|---|---|
+| TC-LOGIN-001 | Login with valid credentials | Products page appeared successfully |
+| TC-LOGIN-002 | Login with incorrect password | Invalid credentials error message displayed |
+| TC-LOGIN-003 | Login with unregistered username | Invalid credentials error message displayed |
+| TC-LOGIN-004 | Login with both incorrect username and incorrect password | Invalid credentials error message displayed |
+| TC-LOGIN-005 | Login with both fields empty | Username required error message displayed |
+| TC-LOGIN-006 | Login with empty username and valid password | Username required error message displayed |
+| TC-LOGIN-007 | Login with valid username and empty password | Password required error message displayed |
+| TC-LOGIN-008 | Login with invalid username and empty password | Password required error message displayed |
+| TC-LOGIN-009 | Login with locked-out user credentials | Locked-out user error message displayed |
+| TC-LOGIN-010 | Login with problem user credentials | Products page displayed successfully; incorrect product images observed |
+| TC-LOGIN-011 | Login with performance glitch user | Products page displayed successfully after a noticeable delay |
+| TC-LOGIN-012 | Login with visual user credentials | Products page displayed successfully; no unusual behaviour observed |
+| TC-LOGIN-013 | Login with leading and trailing spaces in username | Invalid credentials error message displayed |
+| TC-LOGIN-014 | Login with uppercase username | Invalid credentials error message displayed |
+| TC-LOGIN-015 | Login with uppercase password | Invalid credentials error message displayed |
+| TC-LOGIN-016 | Login with very long username | Invalid credentials error message displayed |
+| TC-LOGIN-017 | Login with special characters in username | Invalid credentials error message displayed |
+| TC-LOGIN-018 | Login with username containing only spaces | Invalid credentials error message displayed |
+| TC-LOGIN-019 | Login with numeric-only username | Invalid credentials error message displayed |
+| TC-LOGIN-020 | Login with special characters in password | Invalid credentials error message displayed |
+
 **3. Test Data**
 | Test Case ID | Username | Password | Purpose |
 |---|---|---|---|---|
