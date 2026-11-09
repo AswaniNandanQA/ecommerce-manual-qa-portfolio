@@ -65,7 +65,8 @@ SauceDemo – Login Module Test Cases
 | TC-LOGIN-020 | standard_user | secret@#$123 | Invalid credentials error message displayed |
 
 Note: The invalid usernames and passwords above are test inputs, not valid SauceDemo accounts. SauceDemo's publicly provided demo credentials are used for the valid and special-account scenarios.
-5. Login Test Cases
+
+5. Login Test Cases Description
 
 TC-LOGIN-001: Login with valid credentials
 
