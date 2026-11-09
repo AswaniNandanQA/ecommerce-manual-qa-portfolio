@@ -1,9 +1,13 @@
 # BUG-004: Incorrect Product Images Displayed
 
 **Module:** Products
+
 **Test User:** problem_user
+
 **Severity:** Medium
+
 **Priority:** Medium
+
 **Status:** Observed
 
 ## Preconditions
