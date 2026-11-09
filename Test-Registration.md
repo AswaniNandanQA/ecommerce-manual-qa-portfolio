@@ -1,12 +1,23 @@
-E-commerce Application — Registration Test Cases
-Project Overview
-•	Project: E-commerce Application
-•	Module: User Registration
-•	Testing Type: Manual Testing
-•	Prepared by: Aswani Nandan
-•	Total Test Cases: 15
-________________________________________
 
+# E-commerce Application – Registration Test Cases
+
+## 1. Project Overview
+
+- **Project:** E-commerce Application
+- **Module:** User Registration
+- **Testing Type:** Manual Testing
+- **Prepared By:** Aswani Nandan
+- **Total Test Cases:** 15
+- **Execution Status:** Not Executed
+- **Test Environment:** Pending selection of a suitable registration application
+
+## 2. Execution Note
+
+These test cases are designed for a generic e-commerce registration module. They have not yet been executed against a real application.
+
+Actual results and execution statuses will be updated after testing against a suitable application.
+
+Some scenarios depend on the application's documented requirements, including password length, password complexity, terms acceptance and email verification. These requirements must be confirmed before execution.
 
 TC-REG-001: Register with Valid Details
 •	Objective: Verify that a new user can successfully register using valid information.
