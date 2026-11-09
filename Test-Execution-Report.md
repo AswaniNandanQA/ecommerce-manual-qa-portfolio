@@ -18,6 +18,8 @@ Not Executed	60
 
 ## 3. Test Execution Details
 
+## Login Execution Details
+
 | Test Case ID | Test Scenario | Actual Result | Status | Defect ID |
 |---|---|---|---|---|
 | TC-LOGIN-001 | Login with valid credentials | Products page appeared successfully | Pass | N/A |
@@ -50,6 +52,14 @@ Not Executed	60
 | TC-CHECKOUT-001 | Proceed to checkout with a valid cart | Not Executed | Not Executed | N/A |
 | TC-CHECKOUT-004 | Verify successful order placement | Not Executed | Not Executed | N/A |
 
+
+## Cart Execution Details
+
+| Test Case ID | Test Scenario | Actual Result | Status | Defect ID |
+|---|---|---|---|---|
+| TC-CART-001 | Add a single product to cart | Sauce Labs Backpack was added successfully. Cart badge displayed 1. | Pass | N/A |
+| TC-CART-002 | Add multiple products to cart | Sauce Labs Backpack, Sauce Labs Bike Light and Sauce Labs Bolt T-Shirt were added successfully. Cart badge displayed 3. | Pass | N/A |
+| TC-CART-003 | Verify cart badge count after adding one product | Cart badge displayed 1 after adding Sauce Labs Backpack. | Pass | N/A |
 
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
 
