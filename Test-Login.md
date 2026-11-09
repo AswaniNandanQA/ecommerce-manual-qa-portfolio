@@ -15,28 +15,28 @@ SauceDemo – Login Module Test Cases
 
 **3.  Login Test Cases**
 
-| Test Case ID | Test Scenario | Actual Result |
+| Test Case ID | Test Scenario | Expected Result |
 |---|---|---|
-| TC-LOGIN-001 | Login with valid credentials | Products page appeared successfully |
-| TC-LOGIN-002 | Login with incorrect password | Invalid credentials error message displayed |
-| TC-LOGIN-003 | Login with unregistered username | Invalid credentials error message displayed |
-| TC-LOGIN-004 | Login with both incorrect username and incorrect password | Invalid credentials error message displayed |
-| TC-LOGIN-005 | Login with both fields empty | Username required error message displayed |
-| TC-LOGIN-006 | Login with empty username and valid password | Username required error message displayed |
-| TC-LOGIN-007 | Login with valid username and empty password | Password required error message displayed |
-| TC-LOGIN-008 | Login with invalid username and empty password | Password required error message displayed |
-| TC-LOGIN-009 | Login with locked-out user credentials | Locked-out user error message displayed |
+| TC-LOGIN-001 | Login with valid credentials | User should successfully log in and navigate to the Products page |
+| TC-LOGIN-002 | Login with incorrect password | Login should be rejected with an appropriate error message |
+| TC-LOGIN-003 | Login with unregistered username | Login should be rejected with an appropriate error message |
+| TC-LOGIN-004 | Login with both incorrect username and incorrect password | Login should be rejected |
+| TC-LOGIN-005 | Login with both fields empty | Application should display a required-field validation message |
+| TC-LOGIN-006 | Login with empty username and valid password | Application should display a username-required message |
+| TC-LOGIN-007 | Login with valid username and empty password | Application should display a password-required message |
+| TC-LOGIN-008 | Login with invalid username and empty password | Application should display a password-required message |
+| TC-LOGIN-009 | Login with locked-out user credentials | Application should prevent login and display an appropriate locked-out message |
 | TC-LOGIN-010 | Login with problem user credentials | Products page displayed successfully; incorrect product images observed |
-| TC-LOGIN-011 | Login with performance glitch user | Products page displayed successfully after a noticeable delay |
-| TC-LOGIN-012 | Login with visual user credentials | Products page displayed successfully; no unusual behaviour observed |
-| TC-LOGIN-013 | Login with leading and trailing spaces in username | Invalid credentials error message displayed |
-| TC-LOGIN-014 | Login with uppercase username | Invalid credentials error message displayed |
-| TC-LOGIN-015 | Login with uppercase password | Invalid credentials error message displayed |
-| TC-LOGIN-016 | Login with very long username | Invalid credentials error message displayed |
-| TC-LOGIN-017 | Login with special characters in username | Invalid credentials error message displayed |
-| TC-LOGIN-018 | Login with username containing only spaces | Invalid credentials error message displayed |
-| TC-LOGIN-019 | Login with numeric-only username | Invalid credentials error message displayed |
-| TC-LOGIN-020 | Login with special characters in password | Invalid credentials error message displayed |
+| TC-LOGIN-011 | Login with performance glitch user | User should successfully log in and access the Products page without noticeable delay |
+| TC-LOGIN-012 | Login with visual user credentials | User should successfully log in and access the Products page |
+| TC-LOGIN-013 | Login with leading and trailing spaces in username | Application should handle the input according to its username validation rules and reject invalid credentials if spaces are not accepted |
+| TC-LOGIN-014 | Login with uppercase username | Application should reject the credentials if usernames are case-sensitive |
+| TC-LOGIN-015 | Login with uppercase password | Application should reject the credentials because the password does not match the correct case |
+| TC-LOGIN-016 | Login with very long username | Application should handle the input without crashing and reject invalid credentials |
+| TC-LOGIN-017 | Login with special characters in username | Application should reject invalid credentials |
+| TC-LOGIN-018 | Login with username containing only spaces | Application should reject the input and prevent login |
+| TC-LOGIN-019 | Login with numeric-only username | Application should reject invalid credentials |
+| TC-LOGIN-020 | Login with special characters in password | Application should reject invalid credentials |
 
 
 **3. Login Test Data**
@@ -52,7 +52,7 @@ SauceDemo – Login Module Test Cases
 | TC-LOGIN-007 | standard_user | empty password | Password required error message displayed |
 | TC-LOGIN-008 | wrong_user | empty password | Password required error message displayed |
 | TC-LOGIN-009 | locked_out_user | secret_sauce | Locked-out user error message displayed |
-| TC-LOGIN-010 | problem_user | secret_sauce | Products page displayed successfully; incorrect product images observed |
+| TC-LOGIN-010 | problem_user | secret_sauce | User should successfully log in and access the Products page |
 | TC-LOGIN-011 | performance_glitch_user | secret_sauce | Products page displayed successfully after a noticeable delay |
 | TC-LOGIN-012 | visual_user | secret_sauce | Products page displayed successfully; no unusual behaviour observed |
 | TC-LOGIN-013 | " standard_user  " | secret_sauce | Invalid credentials error message displayed | 
@@ -79,8 +79,7 @@ TC-LOGIN-001: Login with valid credentials
 3.	Enter secret_sauce in the password field.
 4.	Click the Login button.
 •	Expected Result: User should successfully log in and navigate to the Products page.
-•	Actual Result: Products page displayed successfully.
-•	Status: Pass
+
 
 TC-LOGIN-002: Login with valid username and invalid password
 
@@ -92,8 +91,7 @@ TC-LOGIN-002: Login with valid username and invalid password
 2.	Enter wrong_password123.
 3.	Click Login.
 •	Expected Result: Login should be rejected with an appropriate error message.
-•	Actual Result: Error displayed: Epic sadface: Username and password do not match any user in this service
-•	Status: Pass
+
 
 TC-LOGIN-003: Login with invalid username and valid password
 
@@ -105,8 +103,6 @@ TC-LOGIN-003: Login with invalid username and valid password
 2.	Enter secret_sauce.
 3.	Click Login.
 •	Expected Result: Login should be rejected with an appropriate error message.
-•	Actual Result: Invalid credentials error displayed.
-•	Status: Pass
 
 TC-LOGIN-004: Login with invalid username and invalid password
 
@@ -118,8 +114,7 @@ TC-LOGIN-004: Login with invalid username and invalid password
 2.	Enter wrong_password123.
 3.	Click Login.
 •	Expected Result: Login should be rejected.
-•	Actual Result: Invalid credentials error displayed.
-•	Status: Pass
+
 
 TC-LOGIN-005: Login with both fields empty
 
@@ -131,8 +126,7 @@ TC-LOGIN-005: Login with both fields empty
 2.	Leave the password field empty.
 3.	Click Login.
 •	Expected Result: Application should display a required-field validation message.
-•	Actual Result: Epic sadface: Username is required
-•	Status: Pass
+
 
 TC-LOGIN-006: Login with empty username and valid password
 
@@ -144,8 +138,6 @@ TC-LOGIN-006: Login with empty username and valid password
 2.	Enter secret_sauce in the password field.
 3.	Click Login.
 •	Expected Result: Application should display a username-required message.
-•	Actual Result: Epic sadface: Username is required
-•	Status: Pass
 
 TC-LOGIN-007: Login with valid username and empty password
 
@@ -157,8 +149,7 @@ TC-LOGIN-007: Login with valid username and empty password
 2.	Leave the password field empty.
 3.	Click Login.
 •	Expected Result: Application should display a password-required message.
-•	Actual Result: Epic sadface: Password is required
-•	Status: Pass
+
 
 TC-LOGIN-008: Login with invalid username and empty password
 
@@ -170,8 +161,7 @@ TC-LOGIN-008: Login with invalid username and empty password
 2.	Leave the password field empty.
 3.	Click Login.
 •	Expected Result: Application should display a password-required message.
-•	Actual Result: Epic sadface: Password is required
-•	Status: Pass
+
 
 TC-LOGIN-009: Login using a locked-out account
 
@@ -183,8 +173,7 @@ TC-LOGIN-009: Login using a locked-out account
 2.	Enter secret_sauce.
 3.	Click Login.
 •	Expected Result: Application should prevent login and display an appropriate locked-out message.
-•	Actual Result: Epic sadface: Sorry, this user has been locked out.
-•	Status: Pass
+
 
 TC-LOGIN-010: Login using problem_user
 
@@ -197,9 +186,7 @@ TC-LOGIN-010: Login using problem_user
 3.	Click Login.
 4.	Observe the Products page.
 •	Expected Result: User should successfully log in and access the Products page.
-•	Actual Result: Login successful. Incorrect/repeated product images were observed on the Products page.
-•	Status: Pass
-•	Related Bug: BUG-004 – Incorrect Product Images
+
 
 TC-LOGIN-011: Login using performance_glitch_user
 
@@ -212,9 +199,6 @@ TC-LOGIN-011: Login using performance_glitch_user
 3.	Click Login.
 4.	Observe the page loading behaviour.
 •	Expected Result: User should successfully log in and access the Products page.
-•	Actual Result: Products page opened with a noticeable delay.
-•	Status: Pass
-•	Observation: Performance delay noticed; no performance failure was confirmed.
 
 TC-LOGIN-012: Login using visual_user
 
@@ -227,8 +211,7 @@ TC-LOGIN-012: Login using visual_user
 3.	Click Login.
 4.	Observe the Products page.
 •	Expected Result: User should successfully log in and access the Products page.
-•	Actual Result: Products page opened successfully. No unusual behaviour was observed during this test.
-•	Status: Pass
+
 
 TC-LOGIN-013: Login with leading and trailing spaces in username
 
@@ -240,8 +223,7 @@ TC-LOGIN-013: Login with leading and trailing spaces in username
 2.	Enter secret_sauce.
 3.	Click Login.
 •	Expected Result: Application should handle the input according to its username validation rules and reject invalid credentials if spaces are not accepted.
-•	Actual Result: Invalid credentials error displayed.
-•	Status: Pass
+
 
 TC-LOGIN-014: Login with uppercase username
 
@@ -253,8 +235,6 @@ TC-LOGIN-014: Login with uppercase username
 2.	Enter secret_sauce.
 3.	Click Login.
 •	Expected Result: Application should reject the credentials if usernames are case-sensitive.
-•	Actual Result: Invalid credentials error displayed.
-•	Status: Pass
 
 TC-LOGIN-015: Login with uppercase password
 
@@ -266,8 +246,7 @@ TC-LOGIN-015: Login with uppercase password
 2.	Enter SECRET_SAUCE.
 3.	Click Login.
 •	Expected Result: Application should reject the credentials because the password does not match the correct case.
-•	Actual Result: Invalid credentials error displayed.
-•	Status: Pass
+
 
 TC-LOGIN-016: Login with a very long username
 
@@ -279,8 +258,7 @@ TC-LOGIN-016: Login with a very long username
 2.	Enter secret_sauce.
 3.	Click Login.
 •	Expected Result: Application should handle the input without crashing and reject invalid credentials.
-•	Actual Result: Invalid credentials error displayed.
-•	Status: Pass
+
 
 TC-LOGIN-017: Login with special characters in username
 
@@ -292,8 +270,7 @@ TC-LOGIN-017: Login with special characters in username
 2.	Enter secret_sauce.
 3.	Click Login.
 •	Expected Result: Application should reject invalid credentials.
-•	Actual Result: Invalid credentials error displayed.
-•	Status: Pass
+
 
 TC-LOGIN-018: Login with username containing only spaces
 
@@ -305,8 +282,7 @@ TC-LOGIN-018: Login with username containing only spaces
 2.	Enter secret_sauce.
 3.	Click Login.
 •	Expected Result: Application should reject the input and prevent login.
-•	Actual Result: Invalid credentials error displayed.
-•	Status: Pass
+
 
 TC-LOGIN-019: Login with numeric-only username
 
@@ -318,8 +294,7 @@ TC-LOGIN-019: Login with numeric-only username
 2.	Enter secret_sauce.
 3.	Click Login.
 •	Expected Result: Application should reject invalid credentials.
-•	Actual Result: Invalid credentials error displayed.
-•	Status: Pass
+
 
 TC-LOGIN-020: Login with valid username and different special-character password
 
@@ -331,8 +306,7 @@ TC-LOGIN-020: Login with valid username and different special-character password
 2.	Enter secret@#$123.
 3.	Click Login.
 •	Expected Result: Application should reject invalid credentials.
-•	Actual Result: Invalid credentials error displayed.
-•	Status: Pass
+
 
 5. Test Execution Summary
 Metric	Result
