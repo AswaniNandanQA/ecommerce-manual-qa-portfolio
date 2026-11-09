@@ -33,6 +33,7 @@ These test cases are designed for the SauceDemo shopping cart module. All test c
 | TC-CART-015 | Verify cart contents after logout and login | Cart contents should behave according to the application's intended session behaviour. |
 
 4. Detailed Test Cases
+   
 TC-CART-001: Add a Single Product to Cart
 Test Objective: To verify that a user can successfully add a single product to the shopping cart.
 Preconditions:
