@@ -10,11 +10,11 @@ E-commerce Application – Test Execution Report
 2. Test Execution Summary
 Metric	Count
 Total Test Cases	80
-Executed	10
-Passed	10
+Executed	20
+Passed	20
 Failed	0
 Blocked	0
-Not Executed	74
+Not Executed	60
 
 ## 3. Test Execution Details
 
