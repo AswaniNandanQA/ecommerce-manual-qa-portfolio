@@ -13,7 +13,7 @@ SauceDemo – Login Module Test Cases
 
 •	Test Environment: SauceDemo practice application
 
-**3.  Login Test Cases**
+**2.  Login Test Cases**
 
 | Test Case ID | Test Scenario | Expected Result |
 |---|---|---|
@@ -66,7 +66,8 @@ SauceDemo – Login Module Test Cases
 
 Note: The invalid usernames and passwords above are test inputs, not valid SauceDemo accounts. SauceDemo's publicly provided demo credentials are used for the valid and special-account scenarios.
 
-5. Login Test Cases Description
+4. Login Test Cases Description
+   
 
 TC-LOGIN-001: Login with valid credentials
 
@@ -81,6 +82,7 @@ TC-LOGIN-001: Login with valid credentials
 •	Expected Result: User should successfully log in and navigate to the Products page.
 
 
+
 TC-LOGIN-002: Login with valid username and invalid password
 
 •	Test Data: TD-007
@@ -91,6 +93,7 @@ TC-LOGIN-002: Login with valid username and invalid password
 2.	Enter wrong_password123.
 3.	Click Login.
 •	Expected Result: Login should be rejected with an appropriate error message.
+
 
 
 TC-LOGIN-003: Login with invalid username and valid password
@@ -104,6 +107,7 @@ TC-LOGIN-003: Login with invalid username and valid password
 3.	Click Login.
 •	Expected Result: Login should be rejected with an appropriate error message.
 
+
 TC-LOGIN-004: Login with invalid username and invalid password
 
 •	Test Data: Invalid username and password.
@@ -114,6 +118,7 @@ TC-LOGIN-004: Login with invalid username and invalid password
 2.	Enter wrong_password123.
 3.	Click Login.
 •	Expected Result: Login should be rejected.
+
 
 
 TC-LOGIN-005: Login with both fields empty
@@ -128,6 +133,7 @@ TC-LOGIN-005: Login with both fields empty
 •	Expected Result: Application should display a required-field validation message.
 
 
+
 TC-LOGIN-006: Login with empty username and valid password
 
 •	Test Data: Empty username, secret_sauce.
@@ -139,6 +145,7 @@ TC-LOGIN-006: Login with empty username and valid password
 3.	Click Login.
 •	Expected Result: Application should display a username-required message.
 
+
 TC-LOGIN-007: Login with valid username and empty password
 
 •	Test Data: standard_user, empty password.
@@ -149,6 +156,7 @@ TC-LOGIN-007: Login with valid username and empty password
 2.	Leave the password field empty.
 3.	Click Login.
 •	Expected Result: Application should display a password-required message.
+
 
 
 TC-LOGIN-008: Login with invalid username and empty password
@@ -163,6 +171,7 @@ TC-LOGIN-008: Login with invalid username and empty password
 •	Expected Result: Application should display a password-required message.
 
 
+
 TC-LOGIN-009: Login using a locked-out account
 
 •	Test Data: TD-003
@@ -173,6 +182,7 @@ TC-LOGIN-009: Login using a locked-out account
 2.	Enter secret_sauce.
 3.	Click Login.
 •	Expected Result: Application should prevent login and display an appropriate locked-out message.
+
 
 
 TC-LOGIN-010: Login using problem_user
@@ -188,6 +198,7 @@ TC-LOGIN-010: Login using problem_user
 •	Expected Result: User should successfully log in and access the Products page.
 
 
+
 TC-LOGIN-011: Login using performance_glitch_user
 
 •	Test Data: TD-005
@@ -199,6 +210,7 @@ TC-LOGIN-011: Login using performance_glitch_user
 3.	Click Login.
 4.	Observe the page loading behaviour.
 •	Expected Result: User should successfully log in and access the Products page.
+
 
 TC-LOGIN-012: Login using visual_user
 
@@ -213,6 +225,7 @@ TC-LOGIN-012: Login using visual_user
 •	Expected Result: User should successfully log in and access the Products page.
 
 
+
 TC-LOGIN-013: Login with leading and trailing spaces in username
 
 •	Test Data: Username: standard_user; Password: secret_sauce.
@@ -223,6 +236,7 @@ TC-LOGIN-013: Login with leading and trailing spaces in username
 2.	Enter secret_sauce.
 3.	Click Login.
 •	Expected Result: Application should handle the input according to its username validation rules and reject invalid credentials if spaces are not accepted.
+
 
 
 TC-LOGIN-014: Login with uppercase username
@@ -236,6 +250,7 @@ TC-LOGIN-014: Login with uppercase username
 3.	Click Login.
 •	Expected Result: Application should reject the credentials if usernames are case-sensitive.
 
+
 TC-LOGIN-015: Login with uppercase password
 
 •	Test Data: TD-010
@@ -246,6 +261,7 @@ TC-LOGIN-015: Login with uppercase password
 2.	Enter SECRET_SAUCE.
 3.	Click Login.
 •	Expected Result: Application should reject the credentials because the password does not match the correct case.
+
 
 
 TC-LOGIN-016: Login with a very long username
@@ -260,6 +276,7 @@ TC-LOGIN-016: Login with a very long username
 •	Expected Result: Application should handle the input without crashing and reject invalid credentials.
 
 
+
 TC-LOGIN-017: Login with special characters in username
 
 •	Test Data: Username: standard_user@#$%; password: secret_sauce.
@@ -270,6 +287,7 @@ TC-LOGIN-017: Login with special characters in username
 2.	Enter secret_sauce.
 3.	Click Login.
 •	Expected Result: Application should reject invalid credentials.
+
 
 
 TC-LOGIN-018: Login with username containing only spaces
@@ -284,6 +302,7 @@ TC-LOGIN-018: Login with username containing only spaces
 •	Expected Result: Application should reject the input and prevent login.
 
 
+
 TC-LOGIN-019: Login with numeric-only username
 
 •	Test Data: Username: 1234567890; password: secret_sauce.
@@ -294,6 +313,7 @@ TC-LOGIN-019: Login with numeric-only username
 2.	Enter secret_sauce.
 3.	Click Login.
 •	Expected Result: Application should reject invalid credentials.
+
 
 
 TC-LOGIN-020: Login with valid username and different special-character password
