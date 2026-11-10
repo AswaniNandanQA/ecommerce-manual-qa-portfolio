@@ -77,6 +77,7 @@ Not Executed	60
 | TC-CHECKOUT-001 | Proceed to checkout with a valid cart | Checkout: Your Information page opened successfully after clicking Checkout with Sauce Labs Backpack in the cart. | Pass | N/A |
 | TC-CHECKOUT-002 | Verify checkout with an empty cart | Checkout: Your Information page opened successfully with an empty cart. No error message was displayed. | Pass | N/A |
 | TC-CHECKOUT-003 | Verify checkout with all information fields empty | Error: First Name is required. User was prevented from proceeding. | Pass | N/A |
+| TC-CHECKOUT-004 | Verify checkout with First Name field empty | Error: First Name is required. User was prevented from proceeding. | Pass | N/A |
 
 
 
