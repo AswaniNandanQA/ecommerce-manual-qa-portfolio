@@ -10,11 +10,11 @@ E-commerce Application – Test Execution Report
 2. Test Execution Summary
 Metric	Count
 Total Test Cases	80
-Executed	20
-Passed	20
+Executed	50
+Passed	50
 Failed	0
 Blocked	0
-Not Executed	60
+Not Executed	30
 
 ## 3. Test Execution Details
 
@@ -45,9 +45,9 @@ Not Executed	60
 
 Login execution progress
 Metric	Result
-Total test cases	15
-Executed	15
-Passed	15
+Total test cases	20
+Executed	20
+Passed	20
 Failed	0
 Not Executed	0
 
@@ -92,6 +92,9 @@ Not Executed	0
 
 
 ## Checkout Execution Details
+
+| Test Case ID | Test Scenario | Actual Result | Status | Defect ID |
+|---|---|---|---|---|
 | TC-CHECKOUT-001 | Proceed to checkout with a valid cart | Checkout: Your Information page opened successfully after clicking Checkout with Sauce Labs Backpack in the cart. | Pass | N/A |
 | TC-CHECKOUT-002 | Verify checkout with an empty cart | Checkout: Your Information page opened successfully with an empty cart. No error message was displayed. | Pass | N/A |
 | TC-CHECKOUT-003 | Verify checkout with all information fields empty | Error: First Name is required. User was prevented from proceeding. | Pass | N/A |
