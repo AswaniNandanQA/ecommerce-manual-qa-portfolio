@@ -88,6 +88,7 @@ Not Executed	60
 | TC-CHECKOUT-012 | Verify item subtotal calculation | Item total displayed as $39.98, matching the sum of both product prices ($29.99 + $9.99). | Pass | N/A |
 | TC-CHECKOUT-013 | Verify tax calculation | Tax displayed as $3.20, approximately 8% of the $39.98 item total. | Pass | N/A |
 | TC-CHECKOUT-014 | Verify total amount calculation | Total displayed as $43.18, matching Item total ($39.98) + Tax ($3.20). | Pass | N/A |
+| TC-CHECKOUT-015 | Verify successful order placement | Checkout: Complete! page displayed the message "Thank you for your order!" | Pass | N/A |
 
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
 
