@@ -67,6 +67,7 @@ Not Executed	60
 | TC-CART-008 | Verify product details in cart | Sauce Labs Bolt T-Shirt name and description matched the details displayed on the Products page. | Pass | N/A |
 | TC-CART-009 | Verify product price in cart | Sauce Labs Bolt T-Shirt price in the cart matched the price displayed on the Products page. | Pass | N/A |
 | TC-CART-010 | Remove product from cart page | Sauce Labs Bolt T-Shirt was removed successfully. Cart became empty and the cart badge disappeared. | Pass | N/A |
+| TC-CART-011 | Remove one product among multiple products | Sauce Labs Bike Light was removed successfully. Cart badge decreased to 2. Sauce Labs Backpack and Sauce Labs Bolt T-Shirt remained in the cart. | Pass | N/A |
 
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
 
