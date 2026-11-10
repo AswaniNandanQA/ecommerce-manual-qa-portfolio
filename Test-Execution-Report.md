@@ -73,6 +73,11 @@ Not Executed	60
 | TC-CART-014 | Verify cart behaviour after page refresh | Sauce Labs Backpack remained in the cart after refreshing the page. Cart badge continued to display 1. | Pass | N/A |
 | TC-CART-015 | Verify cart behaviour after logout and login | Sauce Labs Backpack remained in the cart after logging out and logging in again as standard_user. | Pass | N/A |
 
+## Checkout Execution Details
+| TC-CHECKOUT-001 | Proceed to checkout with a valid cart | Checkout: Your Information page opened successfully after clicking Checkout with Sauce Labs Backpack in the cart. | Pass | N/A |
+
+
+
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
 
 4. Defect Summary
