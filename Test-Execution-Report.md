@@ -84,6 +84,8 @@ Not Executed	60
 | TC-CHECKOUT-008 | Verify Cancel button on checkout information page | User was redirected to the Shopping Cart page. | Pass | N/A |
 | TC-CHECKOUT-009 | Verify product details on order overview | Product name and description matched the item in the Shopping Cart. | Pass | N/A |
 | TC-CHECKOUT-010 | Verify product price on order overview | Product price matched the price displayed on the Products page. | Pass | N/A |
+| TC-CHECKOUT-011 | Verify product quantity on order overview | Displayed product quantity matched the quantity added to the cart (1). | Pass | N/A |
+| TC-CHECKOUT-012 | Verify item subtotal calculation | Item total displayed as $39.98, matching the sum of both product prices ($29.99 + $9.99). | Pass | N/A |
 
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
 
