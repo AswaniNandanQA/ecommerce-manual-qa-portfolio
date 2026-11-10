@@ -64,6 +64,7 @@ Not Executed	60
 | TC-CART-005 | Verify Add to Cart button changes to Remove | After clicking Remove, the button changed back to Add to cart. | Pass | N/A |
 | TC-CART-006 | Remove product from Products page | Sauce Labs Bike Light was removed successfully. Cart badge decreased from 2 to 1. | Pass | N/A |
 | TC-CART-007 | Open shopping cart | Shopping cart page opened successfully and displayed Sauce Labs Bolt T-Shirt. | Pass | N/A |
+| TC-CART-008 | Verify product details in cart | Sauce Labs Bolt T-Shirt name and description matched the details displayed on the Products page. | Pass | N/A |
 
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
 
