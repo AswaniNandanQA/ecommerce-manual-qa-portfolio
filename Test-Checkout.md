@@ -9,12 +9,13 @@ ________________________________________
 
 
 TC-CHECKOUT-001: Proceed to checkout with a valid cart
-•	Test Data: Laptop
+•	Test Data: Sauce Labs Backpack
+• Preconditions: User is logged in with standard_user.
 •	Steps:
-1.	Add a laptop to the cart.
+1.	Add Sauce Labs Backpack to the cart.
 2.	Open the shopping cart.
 3.	Click Proceed to Checkout.
-•	Expected Result: The user should be redirected to the checkout page.
+•	Expected Result: The user should be redirected to the Checkout: Your Information page.
 •	Actual Result: Not Executed
 •	Status: Not Executed
 
