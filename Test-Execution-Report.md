@@ -69,6 +69,7 @@ Not Executed	60
 | TC-CART-010 | Remove product from cart page | Sauce Labs Bolt T-Shirt was removed successfully. Cart became empty and the cart badge disappeared. | Pass | N/A |
 | TC-CART-011 | Remove one product among multiple products | Sauce Labs Bike Light was removed successfully. Cart badge decreased to 2. Sauce Labs Backpack and Sauce Labs Bolt T-Shirt remained in the cart. | Pass | N/A |
 | TC-CART-012 | Remove all products from cart | Sauce Labs Backpack and Sauce Labs Bolt T-Shirt were removed successfully. Cart became empty and the cart badge disappeared. | Pass | N/A |
+| TC-CART-013 | Verify Continue Shopping functionality | Clicking Continue Shopping redirected the user to the Products page successfully. | Pass | N/A |
 
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
 
