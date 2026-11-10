@@ -45,19 +45,18 @@ TC-CHECKOUT-002: Verify checkout with an empty cart
 •	Steps:
 1.	Open the shopping cart without adding any products.
 2.	Try to proceed to checkout.
-•	Expected Result: The website should prevent checkout and display an appropriate empty-cart message.
+•	Expected Result: The application should respond appropriately when checkout is attempted with an empty cart. Record the actual behaviour.
 •	Actual Result: Not Executed
 •	Status: Not Executed
 
 
-TC-CHECKOUT-003: Verify shipping address with valid details
-•	Test Data: Valid name, address, city, state, and PIN code.
+TC-CHECKOUT-003: Verify checkout with all information fields empty
+•	Test Data: First Name, Last Name and Postal Code left empty.
 •	Steps:
-1.	Add a product to the cart.
-2.	Proceed to checkout.
-3.	Enter valid shipping details.
-4.	Continue to the next step.
-•	Expected Result: The shipping address should be accepted.
+  1. Open the Checkout: Your Information page.
+  2. Leave all three fields empty.
+  3. Click Continue.
+•	Expected Result: The application should prevent checkout and display a required-field validation message.
 •	Actual Result: Not Executed
 •	Status: Not Executed
 
