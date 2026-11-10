@@ -43,6 +43,15 @@ Not Executed	60
 | TC-LOGIN-019 | Login with numeric-only username | Invalid credentials error message displayed | Pass | N/A |
 | TC-LOGIN-020 | Login with special characters in password | Invalid credentials error message displayed | Pass | N/A |
 
+Login execution progress
+Metric	Result
+Total test cases	15
+Executed	15
+Passed	15
+Failed	0
+Not Executed	0
+
+
 | TC-REG-001 | Register with valid details | Not Executed | Not Executed | N/A |
 | TC-REG-002 | Register with an existing email | Not Executed | Not Executed | N/A |
 | TC-SEARCH-001 | Search with a valid product name | Not Executed | Not Executed | N/A |
@@ -73,6 +82,15 @@ Not Executed	60
 | TC-CART-014 | Verify cart behaviour after page refresh | Sauce Labs Backpack remained in the cart after refreshing the page. Cart badge continued to display 1. | Pass | N/A |
 | TC-CART-015 | Verify cart behaviour after logout and login | Sauce Labs Backpack remained in the cart after logging out and logging in again as standard_user. | Pass | N/A |
 
+Cart execution progress
+Metric	Result
+Total test cases	15
+Executed	15
+Passed	15
+Failed	0
+Not Executed	0
+
+
 ## Checkout Execution Details
 | TC-CHECKOUT-001 | Proceed to checkout with a valid cart | Checkout: Your Information page opened successfully after clicking Checkout with Sauce Labs Backpack in the cart. | Pass | N/A |
 | TC-CHECKOUT-002 | Verify checkout with an empty cart | Checkout: Your Information page opened successfully with an empty cart. No error message was displayed. | Pass | N/A |
@@ -89,6 +107,14 @@ Not Executed	60
 | TC-CHECKOUT-013 | Verify tax calculation | Tax displayed as $3.20, approximately 8% of the $39.98 item total. | Pass | N/A |
 | TC-CHECKOUT-014 | Verify total amount calculation | Total displayed as $43.18, matching Item total ($39.98) + Tax ($3.20). | Pass | N/A |
 | TC-CHECKOUT-015 | Verify successful order placement | Checkout: Complete! page displayed the message "Thank you for your order!" | Pass | N/A |
+
+Checkout execution progress
+Metric	Result
+Total test cases	15
+Executed	15
+Passed	15
+Failed	0
+Not Executed	0
 
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
 
