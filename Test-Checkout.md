@@ -61,15 +61,21 @@ TC-CHECKOUT-003: Verify checkout with all information fields empty
 •	Status: Not Executed
 
 
-TC-CHECKOUT-004: Verify mandatory shipping fields
-•	Test Data: Leave required address fields empty.
+TC-CHECKOUT-004:  Verify checkout with First Name field empty
+•	Test Data: 
+  - First Name: Empty
+  - Last Name: Nandan
+  - Postal Code: 689691
 •	Steps:
-1.	Open the checkout page.
-2.	Leave mandatory shipping fields empty.
-3.	Click Continue.
-•	Expected Result: Appropriate validation messages should appear for mandatory fields.
+  1. Open the Checkout: Your Information page.
+  2. Leave the First Name field empty.
+  3. Enter Nandan in the Last Name field.
+  4. Enter 689691 in the Postal Code field.
+  5. Click Continue.
+•	Expected Result: The application should display "Error: First Name is required" and prevent the user from proceeding.
 •	Actual Result: Not Executed
 •	Status: Not Executed
+
 
 
 TC-CHECKOUT-005: Verify invalid PIN code
