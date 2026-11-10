@@ -62,6 +62,7 @@ Not Executed	60
 | TC-CART-003 | Verify cart badge count after adding one product | Cart badge displayed 1 after adding Sauce Labs Backpack. | Pass | N/A |
 | TC-CART-004 | Verify cart badge count after adding multiple products | Cart badge displayed 3 after adding Sauce Labs Backpack, Sauce Labs Bike Light and Sauce Labs Bolt T-Shirt. | Pass | N/A |
 | TC-CART-005 | Verify Add to Cart button changes to Remove | After clicking Remove, the button changed back to Add to cart. | Pass | N/A |
+| TC-CART-006 | Remove product from Products page | Sauce Labs Bike Light was removed successfully. Cart badge decreased from 2 to 1. | Pass | N/A |
 
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
 
