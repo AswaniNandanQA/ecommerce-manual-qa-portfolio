@@ -60,6 +60,7 @@ Not Executed	60
 | TC-CART-001 | Add a single product to cart | Sauce Labs Backpack was added successfully. Cart badge displayed 1. | Pass | N/A |
 | TC-CART-002 | Add multiple products to cart | Sauce Labs Backpack, Sauce Labs Bike Light and Sauce Labs Bolt T-Shirt were added successfully. Cart badge displayed 3. | Pass | N/A |
 | TC-CART-003 | Verify cart badge count after adding one product | Cart badge displayed 1 after adding Sauce Labs Backpack. | Pass | N/A |
+| TC-CART-004 | Verify cart badge count after adding multiple products | Cart badge displayed 3 after adding Sauce Labs Backpack, Sauce Labs Bike Light and Sauce Labs Bolt T-Shirt. | Pass | N/A |
 
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
 
