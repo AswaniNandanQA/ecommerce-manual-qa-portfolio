@@ -8,6 +8,26 @@ Preconditions:
 ________________________________________
 
 
+
+| Test Case ID | Test Scenario | Expected Result |
+|---|---|---|
+| TC-CHECKOUT-001 | Proceed to checkout with a valid cart | Checkout: Your Information page should open successfully. |
+| TC-CHECKOUT-002 | Verify checkout with an empty cart | Record whether checkout is allowed or prevented when the cart is empty. |
+| TC-CHECKOUT-003 | Verify checkout with all information fields empty | Appropriate validation message should be displayed. |
+| TC-CHECKOUT-004 | Verify checkout with First Name field empty | First Name required validation message should appear. |
+| TC-CHECKOUT-005 | Verify checkout with Last Name field empty | Last Name required validation message should appear. |
+| TC-CHECKOUT-006 | Verify checkout with Postal Code field empty | Postal Code required validation message should appear. |
+| TC-CHECKOUT-007 | Verify checkout with valid customer information | User should proceed to the Checkout: Overview page. |
+| TC-CHECKOUT-008 | Verify Cancel button on checkout information page | User should return to the shopping cart. |
+| TC-CHECKOUT-009 | Verify product details on order overview page | Correct product name and description should be displayed. |
+| TC-CHECKOUT-010 | Verify product price on order overview page | Product price should match the Products page. |
+| TC-CHECKOUT-011 | Verify item quantity in order overview | Displayed quantity should match the quantity added to the cart. |
+| TC-CHECKOUT-012 | Verify item subtotal calculation | Item subtotal should be calculated correctly. |
+| TC-CHECKOUT-013 | Verify tax calculation | Tax amount should be calculated correctly. |
+| TC-CHECKOUT-014 | Verify total amount calculation | Final total should equal item subtotal plus tax. |
+| TC-CHECKOUT-015 | Verify successful order placement | Order confirmation message should be displayed after clicking Finish. |
+
+
 TC-CHECKOUT-001: Proceed to checkout with a valid cart
 •	Test Data: Sauce Labs Backpack
 • Preconditions: User is logged in with standard_user.
