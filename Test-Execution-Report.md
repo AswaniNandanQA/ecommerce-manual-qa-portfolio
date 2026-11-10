@@ -80,8 +80,10 @@ Not Executed	60
 | TC-CHECKOUT-004 | Verify checkout with First Name field empty | Error: First Name is required. User was prevented from proceeding. | Pass | N/A |
 | TC-CHECKOUT-005 | Verify checkout with Last Name field empty | Error: Last Name is required. User was prevented from proceeding. | Pass | N/A |
 | TC-CHECKOUT-006 | Verify checkout with Postal Code field empty | Error: Postal Code is required. User was prevented from proceeding. | Pass | N/A |
-
-
+| TC-CHECKOUT-007 | Verify checkout with valid customer information | Checkout: Overview page opened successfully and displayed the order total. | Pass | N/A |
+| TC-CHECKOUT-008 | Verify Cancel button on checkout information page | User was redirected to the Shopping Cart page. | Pass | N/A |
+| TC-CHECKOUT-009 | Verify product details on order overview | Product name and description matched the item in the Shopping Cart. | Pass | N/A |
+| TC-CHECKOUT-010 | Verify product price on order overview | Product price matched the price displayed on the Products page. | Pass | N/A |
 
 This table is an initial execution template containing 10 selected test cases. The full project contains 80 documented test cases.
 
